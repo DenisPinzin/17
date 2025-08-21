@@ -1,0 +1,14 @@
+h1 {
+  font-size: 2em;
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.parent {
+  color: blueviolet;
+}
+.parent .child {
+  color: green;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */
