@@ -1,5 +1,6 @@
+@use 'variables';
 
 body {
-    background-color: $dark;
-    color: $white;
+    background-color: variables.$dark;
+    color: variables.$white;
 }

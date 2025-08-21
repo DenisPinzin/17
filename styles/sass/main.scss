@@ -1,4 +1,7 @@
-@import "typography";
-@import "variables";
-@import "layout";
+@use "typography";
+@use "variables";
+@use "layout";
 
+h1 {
+    padding: 20px;
+}
