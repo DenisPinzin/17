@@ -1,14 +1,4 @@
-h1 {
-    font-size: 2em;
-    color: red;
-    text-align: center;
-    margin-top: 20px;
-}
+@import "typography";
+@import "variables";
+@import "layout";
 
-.parent {
-    color: blueviolet;
-    .child {
-        color: green;
-        font-weight: bold;
-    }
-}

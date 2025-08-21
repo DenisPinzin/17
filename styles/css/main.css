@@ -1,14 +1,8 @@
-h1 {
-  font-size: 2em;
-  color: red;
-  text-align: center;
-  margin-top: 20px;
+body {
+  font: 19px/23px Montserrat, sans-serif;
 }
 
-.parent {
-  color: blueviolet;
-}
-.parent .child {
-  color: green;
-  font-weight: bold;
+body {
+  background-color: #171c28;
+  color: #f8f9fa;
 }/*# sourceMappingURL=main.css.map */
