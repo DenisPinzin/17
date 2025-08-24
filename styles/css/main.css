@@ -18,6 +18,11 @@ header.header-website {
   margin-bottom: 15px;
 }
 
+.emoji-gif img {
+  width: 0.75em;
+  height: 0.75em;
+}
+
 .section-display {
   display: flex;
   margin-bottom: 10rem;
