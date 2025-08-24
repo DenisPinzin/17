@@ -1,0 +1,26 @@
+.animate-fusee {
+  transition: all 1s ease;
+  display: inline-block;
+  &:hover {
+    animation: moveFusee 2s;
+  }
+}
+
+$shake-intensity: 0.2; // amplitude du tremblement (plus bas = plus doux)
+
+@keyframes moveFusee {
+  @for $i from 0 through 70 {
+    #{ $i * 1% } {
+      $offset: $i * $shake-intensity;
+      transform: translateX(if($i % 2 == 0, -1px * $offset, 1px * $offset));
+    }
+  }
+
+  72% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translate(150px, -300px);
+  }
+}

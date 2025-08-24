@@ -26,7 +26,7 @@
 .section-display .text-content .title {
   font-size: 30px;
   margin-bottom: 10px;
-  line-height: 1.1;
+  line-height: 1.1rem;
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {

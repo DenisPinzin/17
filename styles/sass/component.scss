@@ -3,44 +3,44 @@
 .section-display {
   display: flex;
   margin-bottom: 10rem;
-flex-direction: column;
+  flex-direction: column;
 
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-          &.left-text-content {
+  @media screen and (min-width: 768px) {
     flex-direction: row;
-    .illustration {
-      padding-left: 5rem;
+    &.left-text-content {
+      flex-direction: row;
+      .illustration {
+        padding-left: 5rem;
+      }
     }
-  }
 
-  &.right-text-content {
-    flex-direction: row-reverse;
-    .illustration {
-      padding-right: 5rem;
+    &.right-text-content {
+      flex-direction: row-reverse;
+      .illustration {
+        padding-right: 5rem;
+      }
     }
   }
-    }
 
   .text-content {
     flex: 1;
     .title {
       font-size: 30px;
-          @media screen and (min-width: 768px) {
-font-size: 70px;
-          }
       margin-bottom: 10px;
-      line-height: 1.1;
+      line-height: 1.1rem;
       font-weight: 700;
+      @media screen and (min-width: 768px) {
+        font-size: 70px;
+      }
     }
 
     .paragraph {
       font-size: 15px;
-      @media screen and (min-width: 768px) {
-              font-size: 30px;
-                   line-height: 40px;
-      }
       line-height: 40px;
+      @media screen and (min-width: 768px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
     }
 
     .action-div {
@@ -56,8 +56,6 @@ font-size: 70px;
       margin: auto;
     }
   }
-
-
 }
 
 .competences-icons {
