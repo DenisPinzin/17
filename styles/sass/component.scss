@@ -1,17 +1,45 @@
+@use "variables";
+
 .section-display {
   display: flex;
+  margin-bottom: 10rem;
+flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+          &.left-text-content {
+    flex-direction: row;
+    .illustration {
+      padding-left: 5rem;
+    }
+  }
+
+  &.right-text-content {
+    flex-direction: row-reverse;
+    .illustration {
+      padding-right: 5rem;
+    }
+  }
+    }
 
   .text-content {
     flex: 1;
     .title {
-      font-size: 70px;
+      font-size: 30px;
+          @media screen and (min-width: 768px) {
+font-size: 70px;
+          }
       margin-bottom: 10px;
       line-height: 1.1;
       font-weight: 700;
     }
 
     .paragraph {
-      font-size: 30px;
+      font-size: 15px;
+      @media screen and (min-width: 768px) {
+              font-size: 30px;
+                   line-height: 40px;
+      }
       line-height: 40px;
     }
 
@@ -20,10 +48,29 @@
   }
   .illustration {
     flex: 1;
+    margin-top: 50px;
+    padding: 5rem;
     img {
       max-width: 100%;
       display: block;
       margin: auto;
+    }
+  }
+
+
+}
+
+.competences-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 45px;
+  i {
+    transition: all 0.3s ease;
+    &:hover {
+      cursor: pointer;
+      color: variables.$secondary;
+      transform: scale(1.2);
     }
   }
 }
