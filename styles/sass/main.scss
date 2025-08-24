@@ -1,7 +1,5 @@
 @use "typography";
 @use "variables";
 @use "layout";
-
-h1 {
-    padding: 20px;
-}
+@use "component";
+@use "buttons";

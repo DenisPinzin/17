@@ -1,0 +1,40 @@
+@use 'variables';
+
+@function darkenBorder($color) {
+    @return darken($color, 20%);
+}
+
+@function getFontColor($color) {
+    @if (lightness($color) > 50) {
+        @return variables.$dark;
+    } @else {
+        @return variables.$white;
+    }
+}
+
+.btn {
+    padding: 15px 30px;
+    border: solid 1px ;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+
+  @each $name, $color in variables.$colors {
+    &.btn-#{$name} {
+      background-color: $color;
+      border-color: darkenBorder($color);
+      color: getFontColor($color);
+
+      &:hover {
+        $bg-hover: lighten($color, 10%);
+        background-color: $bg-hover;
+        color: getFontColor($bg-hover);
+      }
+    }
+  }
+}

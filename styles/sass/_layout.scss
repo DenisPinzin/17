@@ -1,6 +1,18 @@
-@use 'variables';
+@use "variables";
 
 body {
     background-color: variables.$dark;
     color: variables.$white;
+    margin: 0 30px;
+}
+
+main {
+    margin: 0 30px;
+}
+
+header.header-website {
+    background-color: variables.$lightgray;
+    height: 75px;
+    margin-bottom: 15px;
+    
 }
